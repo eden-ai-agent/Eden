@@ -2,7 +2,8 @@
 import sys
 import logging
 from PyQt5.QtWidgets import QApplication
-from main import EdenMainWindow
+from .main import EdenMainWindow
+from .controller import EdenController
 
 
 def setup_logging():
@@ -24,6 +25,10 @@ def main():
     app = QApplication(sys.argv)
     window = EdenMainWindow()
     window.show()
+
+    controller = EdenController()
+    controller.run()
+
     sys.exit(app.exec_())
 
 
