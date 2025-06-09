@@ -1,0 +1,11 @@
+plugins:
+  consent_monitoring:
+    enabled: true
+  encryption:
+    enabled: true
+  transcription:
+    enabled: true
+  voiceprint:
+    enabled: true
+  storage:
+    enabled: true
